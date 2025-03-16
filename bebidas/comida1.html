@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca Cola</title>
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="../index.html" class="d-flex align-items-center">
+                <img src="../img/logo.png" alt="Logo" class="logo">
+            </a>
+            <a class="navbar-brand ms-2" href="../index.html">Food Truck</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="fredsDropdown" role="button"
+                            data-bs-toggle="dropdown">Freds</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../comidafria/comida1.html">Entrepà de ibèric</a></li>
+                            <li><a class="dropdown-item" href="../comidafria/comida2.html">Entrepà de formatge</a></li>
+                            <li><a class="dropdown-item" href="../comidafria/comida3.html">Entrepà vegetal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="calentsDropdown" role="button"
+                            data-bs-toggle="dropdown">Calents</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../comidacaliente/comida1.html">Burger</a></li>
+                            <li><a class="dropdown-item" href="../comidacaliente/comida2.html">Frankfurt</a></li>
+                            <li><a class="dropdown-item" href="../comidacaliente/comida3.html">Hot Dog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dolcosDropdown" role="button"
+                            data-bs-toggle="dropdown">Dolços</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../dolces/comida1.html">Gelat Magnum</a></li>
+                            <li><a class="dropdown-item" href="../dolces/comida2.html">Crêppe xocolata</a></li>
+                            <li><a class="dropdown-item" href="../dolces/comida3.html">Pastís de formatge</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="begudesDropdown" role="button"
+                            data-bs-toggle="dropdown">Begudes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="">Coca Cola</a></li>
+                            <li><a class="dropdown-item" href="./comida2.html">Cervesa</a></li>
+                            <li><a class="dropdown-item" href="./comida3.html">Suc de taronja</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="navbar-text me-3" id="welcomeMessage"></span>
+                <button class="btn btn-outline-light me-2" id="loginBtn">Login</button>
+                <button class="btn btn-outline-danger" id="logoutBtn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <nav aria-label="breadcrumb" class="mt-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../bebidas.html">Begudes</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Coca Cola</li>
+        </ol>
+    </nav>
+
+    <!-- Product Cards -->
+    <div class="container">
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <img src="../img/bebida1.jpeg" class="card-img-sec" alt="Coca Cola">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">Coca Cola</h5>
+                    </div>
+                    <p class="card-text">Coca Cola és una beguda refrescant carbonatada de cola, coneguda pel seu sabor
+                        únic i refrescant. Ideal per acompanyar els teus àpats o gaudir en qualsevol moment del dia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Cookie Alert -->
+    <div class="alert alert-info m-0" role="alert" id="cookieAlert">
+        <span>Usamos cookies para mejorar tu experiencia. <a href="#" class="alert-link"
+                id="acceptCookies">Aceptar</a></span>
+    </div>
+
+    <footer class="bg-dark text-white py-3 d-flex justify-content-center align-items-center">
+        <div class="mx-5 text-center">
+            <img src="../img/lugar.png" alt="Logo" style="width: 40px; height: 40px; margin-bottom: 10px;">
+            <p class="mb-0">¿Dónde encontrarnos?</p>
+            <p class="mb-0">Calle 123, Ciudad, País</p>
+        </div>
+        <div class="mx-5 text-center">
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            <p class="mb-0">info - Support - Mareting</p>
+            <p class="mb-0">Terms of Use - Privacy Policy</p>
+            <p class="mb-0">© 2025 Food Truck</p>
+        </div>
+        <div class="mx-5 text-center">
+            <a href="../quienes_somos.html" style="text-decoration: none; color: white;"> <img
+                    src="../img/quienes_somos.png" alt="Logo" style="width: 40px; height: 40px; margin-bottom: 10px;">
+                <p class="mb-0">Quiénes somos</p>
+            </a>
+        </div>
+    </footer>
+
+    <!-- LOGIN MODAL -->
+    <div class="modal fade" id="loginModal" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="position: absolute;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nombre de usuario</label>
+                            <input type="text" class="form-control" id="username" autocomplete="additional-name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" autocomplete="new-password"
+                                required>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
